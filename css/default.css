@@ -1,0 +1,196 @@
+@media screen and (max-width: 1000px) {
+	nav.span5.offset4 {
+	width: 48.93617021276595%;
+	}
+	div.search {
+		display: none !important;
+	}
+	div#main {
+		width:60%;
+	}
+
+	div.search > form.form-inline > label.element-invisible {
+		display: none;
+	}
+}
+
+@font-face {
+	font-family: 'PGIsadoraCyrProRegular';
+	src: url('fonts/PGIsadoraCyrProRegular.ttf');
+}
+
+body {
+	background-image: url('../images/backgrounds/background-all.png');
+}
+/* Header */
+header {
+	background-image: url('../images/backgrounds/background-top-line.png');
+	background-repeat: repeat-x;
+	height: 40px;
+}
+/* Main menu */
+nav > ul.nav.menu {
+	display: table;
+}
+
+nav > ul.nav.menu > li {
+	display: inline-block;
+	padding: 8px 0 0 20px;
+}
+
+nav > ul.nav.menu > li > a,
+nav > ul.nav.menu > li > a:hover,
+aside > ul.nav.menu > li > a,
+aside > ul.nav.menu > li > a:hover {
+	color: rgb(255, 255, 255);
+	background: none;
+}
+
+nav > ul.nav.menu > li > a:hover,
+aside > ul.nav.menu > li > a:hover {
+	text-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+
+/* Search box on top */
+.search {
+	height: 30px;
+	padding-top: 8px;
+}
+
+div.search > form.form-inline > label.element-invisible {
+	color: rgb(255, 255, 255);
+	display: table;
+	float: left;
+	padding: 2px 10px 0 0;
+}
+
+div.search > form.form-inline > input#mod-search-searchword {
+	height: 12px;
+	width: 100px;
+}
+
+/* Left block logo + aside */
+div#left {
+	display: table;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+div#logo {
+	display: table;	
+	margin: 0 auto;
+	padding: 5px 25px 20px;
+	border: 1px solid rgb(215, 62, 26);
+	border-radius: 0 0 12px 12px;
+	margin-bottom: 30px;
+	background-color: rgb(215, 62, 26);
+	box-shadow: 2px 2px 2px;
+}
+
+aside.moduletable {
+	display: table;
+	margin: 0 auto;
+	border: 1px solid rgb(215, 62, 26);
+	border-radius: 12px 12px 12px 12px;
+	background-color: rgb(215, 62, 26);
+	box-shadow: 2px 2px 2px;
+	padding: 12px 10px 0;
+	width: 144px;
+}
+
+aside.moduletable > h2.menu-name {
+	font-size: 40px !important;
+	color: rgb(255, 245, 0);
+	font-weight: normal;
+}
+
+aside.moduletable > h2.menu-name,
+aside > ul.nav.menu {
+	display: table;
+	margin: 0 auto 12px;
+}
+
+aside > ul.nav.menu > li {
+	padding: 8px 0;
+	text-align: center;
+	display: table;
+	width: 140px;
+}
+
+aside > ul.nav.menu > li.current.active {
+	background-image: url('../images/backgrounds/background-active-link.png');
+	background-repeat: no-repeat;
+	background-size: 336px 41px;
+	width: 183px;
+	padding: 12px 88px 0px 74px;
+	margin-left: -97px;
+	height: 29px;
+	line-height: 10px;
+}
+
+aside.moduletable > h2.menu-name,
+aside > ul.nav.menu > li > a {
+	font-family: PGIsadoraCyrProRegular, Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+}
+
+/* Big bamer */
+div#bigcentralslider {
+	display: table;
+	z-index: -12;
+}
+div#bigcentralslider > .bannergroup {
+	display: table;
+	margin: 0 auto;
+	position: relative;
+	top: -13px;
+}
+/* Breadcrumbs */
+div#breadcrumbs {
+	margin-left: 0;
+}
+/* Main container */
+div#main {
+	
+}
+
+.main-content {
+	position: inherit;
+	z-index: 0;
+	background-color: rgb(255, 255, 255);
+	padding: 30px;
+	border-radius: 7px;
+	box-shadow: 2px 2px 20px;
+	position: relative;
+	z-index: 5;
+}
+/* Template k2 for static page */
+.itemListView h1 {
+	font-size: 30px;
+	text-align: left;
+	text-transform: none;
+	color: rgb(132, 33, 11);
+}
+
+.itemListView h2 {
+	font-size: 22px;
+}
+
+.itemListView h2 > a {
+	color: rgb(255, 127, 80);
+	text-decoration: none;
+}
+
+.itemListView h2 > a:hover {
+	text-shadow: 10px 4px 8px rgb(110, 0, 0);
+}
+
+.itemListView .catItemView.groupLeading {
+border-bottom: 1px dashed rgba(110, 0, 0, 0.1);
+padding-bottom: 10px;
+}
+
+
+
+

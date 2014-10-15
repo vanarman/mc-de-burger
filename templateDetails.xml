@@ -16,29 +16,11 @@
                  <filename>templateDetails.xml</filename>
          </files>
          <positions>
-                 <position>logo</position>
                  <position>mainmenu</position>
-                 <position>languageswitch</position>
+                 <position>search</position>
+                 <position>additionalmenu</position>
                  <position>breadcrumbs</position>
-                 <position>tile1</position>
-                 <position>tile2</position>
-                 <position>tile3</position>
-                 <position>tile4</position>
-                 <position>tile5</position>
-                 <position>tile6</position>
-                 <position>slider</position>
-                 <position>about</position>
-                 <position>position1</position>
-                 <position>position2</position>
-                 <position>position3</position>
-                 <position>position4</position>
-                 <position>position5</position>
-                 <position>position6</position>
-                 <position>position7</position>
-                 <position>position8</position>
-                 <position>contact</position>
-                 <position>social</position>
-                 <position>map</position>
-                 <position>debug</position>
+                 <position>bigcentralslider</position>
+                 <position>footer</position>
          </positions>
  </extension>
