@@ -1,9 +1,21 @@
+.row-fluid .offset4 {margin-left: 30%;}
+.float-l {float: left;}
+.clr {clear: both;}
+
+@font-face {
+	font-family: 'PGIsadoraCyrProRegular';
+	src: url('fonts/PGIsadoraCyrProRegular.ttf');
+}
+
+
+@font-face {
+	font-family: 'RobotoCondensedLight';
+	src: url('fonts/RobotoCondensed-Light.ttf');
+}
+
 @media screen and (max-width: 1000px) {
 	nav.span5.offset4 {
-	width: 48.93617021276595%;
-	}
-	div.search {
-		display: none !important;
+		width: 35.93617%;
 	}
 	div#main {
 		width:60%;
@@ -12,11 +24,6 @@
 	div.search > form.form-inline > label.element-invisible {
 		display: none;
 	}
-}
-
-@font-face {
-	font-family: 'PGIsadoraCyrProRegular';
-	src: url('fonts/PGIsadoraCyrProRegular.ttf');
 }
 
 body {
@@ -146,9 +153,23 @@ div#bigcentralslider > .bannergroup {
 	position: relative;
 	top: -13px;
 }
+
+div#bigcentralslider > .bannergroup > .banneritem > img {
+	max-height: 400px;
+}
 /* Breadcrumbs */
 div#breadcrumbs {
 	margin-left: 0;
+}
+
+div#breadcrumbs .breadcrumb {
+	margin: 0;
+	background: none;
+}
+
+.breadcrumb > li,
+.breadcrumb > li > a {
+	color: rgb(249, 77, 14) !important;
 }
 /* Main container */
 div#main {
@@ -158,39 +179,138 @@ div#main {
 .main-content {
 	position: inherit;
 	z-index: 0;
-	background-color: rgb(255, 255, 255);
+	/*background-color: rgb(255, 255, 255);
 	padding: 30px;
 	border-radius: 7px;
-	box-shadow: 2px 2px 20px;
-	position: relative;
-	z-index: 5;
+	box-shadow: 2px 2px 20px;*/
 }
-/* Template k2 for static page */
-.itemListView h1 {
+/* Static page category */
+.StaticCategoryOut h1,
+.StaticPageOut h1 {
 	font-size: 30px;
 	text-align: left;
 	text-transform: none;
 	color: rgb(132, 33, 11);
 }
 
-.itemListView h2 {
+.StaticCategoryOut h2 {
 	font-size: 22px;
 }
 
-.itemListView h2 > a {
+.StaticCategoryOut h2 > a {
 	color: rgb(255, 127, 80);
 	text-decoration: none;
 }
 
-.itemListView h2 > a:hover {
+.StaticCategoryOut h2 > a:hover {
 	text-shadow: 10px 4px 8px rgb(110, 0, 0);
 }
 
-.itemListView .catItemView.groupLeading {
-border-bottom: 1px dashed rgba(110, 0, 0, 0.1);
-padding-bottom: 10px;
+/* Product list on index page*/
+.indexImageLinkList {
+	height: 115px;
+	padding: 5px;
+	
+	border: 3px solid rgb(255, 255, 255);
+	box-shadow: 3px 4px 6px gray;
+	border-radius: 12px;
+
+	position: relative;
+	z-index: 0;
+
+	background: #af0101; /* Old browsers */
+	background: -moz-linear-gradient(top,  #af0101 0%, #c54949 50%, #af0101 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#af0101), color-stop(50%,#c54949), color-stop(100%,#af0101)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #af0101 0%,#c54949 50%,#af0101 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #af0101 0%,#c54949 50%,#af0101 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #af0101 0%,#c54949 50%,#af0101 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #af0101 0%,#c54949 50%,#af0101 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af0101', endColorstr='#af0101',GradientType=0 ); /* IE6-9 */
 }
 
+.indexImageLinkList span.price, span.price {
+	display: table;
+	position: relative;
+	z-index: 2;
+	color: rgb(255, 245, 0);
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	font-size: 23px;
+	font-family: RobotoCondensedLight;
+	letter-spacing: 1px;
+}
 
+.indexImageLinkList a {
+	display: table;
+	position: absolute;
+	bottom: 0;
+	left: 23%;
+}
+}
 
+.indexImageLinkList img {
+	display: table;
+	z-index: -1;
+	position: relative;
+	bottom: 2px;
+}
+/* Static page */
+.StaticPageOut, .StaticCategoryOut, .FoodCategoryOutItem {
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	border-radius: 7px;
+	box-shadow: 2px 2px 20px;
+}
+
+.StaticCategoryOut .itemContainer {
+	border-bottom: 1px dashed rgba(255, 127, 80, 0.4);
+	padding-bottom: 10px;
+	margin: 0 5px;
+}
+
+.StaticCategoryOut h2.catItemTitle {
+	margin: 0;
+	padding-left: 15px;
+	line-height: 30px;
+}
+
+.StaticPageOutBody p {
+	text-indent: 20px;
+}
+
+.itemContainer a.readMore.btn {
+	background: rgb(196, 53, 1);
+	color: white;
+	text-shadow: none;
+	margin-top: 5px;
+}
+/* Product category out*/
+.FoodCategoryOutItem {
+	width: 28%;
+	margin: 10px 10px;
+	padding: 10px;
+	min-height: 250px;
+}
+
+.FoodCategoryOutItem .catItemImageBlock {
+	display: table;
+	margin: 0 auto;
+}
+
+.FoodCategoryOutItem span.price {
+	margin: 0 auto;
+	color: rgb(198, 195, 0);
+}
+
+.FoodCategoryOutItem h3 {
+	font-size: 18px;
+	display: table;
+	margin: 15px auto;
+	text-align: center;
+	line-height: 20px;
+}
+.FoodCategoryOutItem h3 > a,
+.FoodCategoryOutItem h3 > a:hover {
+	color: rgb(173, 173, 173);
+	font-family: RobotoCondensedLight;
+}
 

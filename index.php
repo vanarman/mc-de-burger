@@ -60,7 +60,7 @@
 			</div>
 
 			<!-- Main block -->
-			<div id="main" class="span6 offset4">
+			<div id="main" class="span7 offset4">
 				<?php if ($this->countModules('breadcrumbs')) : ?>
 					<div class="row" id="breadcrumbs">
 							<jdoc:include type="modules" name="breadcrumbs" style="default"/>
