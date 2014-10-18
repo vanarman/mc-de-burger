@@ -81,10 +81,32 @@
 			<!-- Main block End -->
 		</div>
 	</div>
-	<footer>
+	<footer class="container-fluid">
 		<?php if ($this->countModules('footer')) : ?>
-					<jdoc:include type="modules" name="footer" style="default"/>
-		<?php endif; ?>
+			<jdoc:include type="modules" name="footer" style="default"/>
+		<?php endif; ?>	
+		<div class="row-fluid">
+			<div class="span10 offset2" id="small-logo">
+				<img class="smallLogo float-l" <?php echo 'src="templates/' . $template->template . '/images/small-logo.png"'; ?> alt="" title=""/>
+				<div class="span9 footerLine">
+					<hr class="separator" />
+					<p class="copy float-l">Все права защищены MC DE BURG</p>
+					<?php if ($this->countModules('small-map')) : ?>
+						<jdoc:include type="modules" name="small-map" style="default"/>
+					<?php endif; ?>	
+				</div>
+			</div>
+		</div>
+		<div class="social row-fluid">
+			<div class="span3 offset5">
+				<img class="social" <?php echo 'src="templates/' . $template->template . '/images/social/img-f.png"'; ?> alt="" title="" />
+				<img class="social" <?php echo 'src="templates/' . $template->template . '/images/social/img-g.png"'; ?> alt="" title="" />
+				<img class="social" <?php echo 'src="templates/' . $template->template . '/images/social/img-o.png"'; ?> alt="" title="" />
+				<img class="social" <?php echo 'src="templates/' . $template->template . '/images/social/img-t.png"'; ?> alt="" title="" />
+				<img class="social" <?php echo 'src="templates/' . $template->template . '/images/social/img-v.png"'; ?> alt="" title="" />
+			</div>
+		</div>
+		<p class="autor">Programed by Dmytro Sytnik (VanArman) version 1.0</p>
 	</footer>
 </body>
 </html>

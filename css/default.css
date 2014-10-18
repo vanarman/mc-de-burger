@@ -24,6 +24,10 @@
 	div.search > form.form-inline > label.element-invisible {
 		display: none;
 	}
+
+	.foodOut, .StaticPageOut, .StaticCategoryOut, .FoodCategoryOutItem {
+		margin-left: 25px;
+	}
 }
 
 body {
@@ -59,19 +63,19 @@ aside > ul.nav.menu > li > a:hover {
 }
 
 /* Search box on top */
-.search {
+.search.span3 {
 	height: 30px;
 	padding-top: 8px;
 }
 
-div.search > form.form-inline > label.element-invisible {
+div.search.span3 > form.form-inline > label.element-invisible {
 	color: rgb(255, 255, 255);
 	display: table;
 	float: left;
 	padding: 2px 10px 0 0;
 }
 
-div.search > form.form-inline > input#mod-search-searchword {
+div.search.span3> form.form-inline > input#mod-search-searchword {
 	height: 12px;
 	width: 100px;
 }
@@ -186,11 +190,13 @@ div#main {
 }
 /* Static page category */
 .StaticCategoryOut h1,
-.StaticPageOut h1 {
+.StaticPageOut h1,
+.foodOut h1 {
 	font-size: 30px;
 	text-align: left;
 	text-transform: none;
 	color: rgb(132, 33, 11);
+	font-family: RobotoCondensedLight;
 }
 
 .StaticCategoryOut h2 {
@@ -254,7 +260,10 @@ div#main {
 	bottom: 2px;
 }
 /* Static page */
-.StaticPageOut, .StaticCategoryOut, .FoodCategoryOutItem {
+.foodOut,
+.StaticPageOut, 
+.StaticCategoryOut, 
+.FoodCategoryOutItem {
 	background-color: rgb(255, 255, 255);
 	padding: 20px;
 	border-radius: 7px;
@@ -308,9 +317,60 @@ div#main {
 	text-align: center;
 	line-height: 20px;
 }
+
 .FoodCategoryOutItem h3 > a,
 .FoodCategoryOutItem h3 > a:hover {
 	color: rgb(173, 173, 173);
 	font-family: RobotoCondensedLight;
 }
+/* Food out */
+.foodOut span.price {
+	margin: 0 auto;
+	padding-top: 30px;
+	font-size: 40px;
+}
+/* Footer */
+footer {
+	margin-top: 40px;
+}
 
+hr.separator {
+	margin: 53px 0 0px -30px;
+	border: 1px solid rgb(242, 148, 112);
+}
+
+p.copy {
+	margin: 5px 35px 15px;
+	color: rgb(254, 116, 99);
+}
+
+ul.nav.menu.small-menu {
+	display: inline;
+	height: 20px;
+	margin: 0;
+}
+
+ul.nav.menu.small-menu li {
+	display: block;
+	height: 20px;
+	float: left;
+	margin: 5px 36px;
+}
+
+ul.nav.menu.small-menu li > a,
+ul.nav.menu.small-menu li > a:hover {
+	color: rgb(254, 116, 99);
+	background: none;
+}
+
+.social{
+	margin-bottom: -20px;
+}
+
+p.autor {
+	display: table;
+	margin: 0 auto;
+	color: rgb(255, 231, 172);
+	position: relative;
+	bottom: -30px;
+}

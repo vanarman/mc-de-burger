@@ -22,5 +22,6 @@
                  <position>breadcrumbs</position>
                  <position>bigcentralslider</position>
                  <position>footer</position>
+                 <position>small-map</position>
          </positions>
  </extension>
