@@ -24,11 +24,16 @@
 	<header class="row-fluid">
 		<div class="span12">
 			<div class="row-fluid">
-				<nav class="span5 offset4">
+				<nav class="span4 offset4">
 					<?php if ($this->countModules('mainmenu')) : ?>
 						<jdoc:include type="modules" name="mainmenu" style="default"/>
 					<?php endif; ?>
 				</nav>
+				<div class="span1">
+					<?php if ($this->countModules('langswitch')) : ?>
+						<jdoc:include type="modules" name="langswitch" style="default"/>
+					<?php endif; ?>
+				</div>
 					<?php if ($this->countModules('search')) : ?>
 								<jdoc:include type="modules" name="search" style="default"/>
 					<?php endif; ?>

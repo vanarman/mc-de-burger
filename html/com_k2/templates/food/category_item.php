@@ -26,7 +26,7 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 	</div>
 <?php endif; ?>
 <?php if(isset($this->item->extra_fields_search)) : ?>
-  	<span class="price"> <? echo $this->item->extra_fields_search; ?> грн</span>
+  	<span class="price"> <? echo $this->item->extra_fields_search; ?></span>
 <?php endif; ?>
 <?php if($this->item->params->get('catItemTitle')): ?>
 	<!-- Item title -->

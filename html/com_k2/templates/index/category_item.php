@@ -16,7 +16,7 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 <!-- Start Out image in index page -->
 <div class="indexImageLinkList span3">
 	<?php if(isset($this->item->extra_fields_search)) : ?>
-	  	<span class="price"> <? echo $this->item->extra_fields_search; ?> грн</span>
+	  	<span class="price"> <? echo $this->item->extra_fields_search; ?></span>
 	<?php endif; ?>
 	<?php if($this->item->params->get('catItemImage') && !empty($this->item->image)): ?>
 	    <a href="<?php echo $this->item->link; ?>" title="<?php if(!empty($this->item->image_caption)) echo K2HelperUtilities::cleanHtml($this->item->image_caption); else echo K2HelperUtilities::cleanHtml($this->item->title); ?>">

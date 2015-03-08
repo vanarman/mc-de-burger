@@ -30,6 +30,8 @@
 	}
 }
 
+html {direction: ltr;}
+
 body {
 	background-image: url('../images/backgrounds/background-all.png');
 }
@@ -62,6 +64,11 @@ aside > ul.nav.menu > li > a:hover {
 	text-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
 
+.mod-languages {
+	margin: 7px 0;
+	padding: 0;
+}
+
 /* Search box on top */
 .search.span3 {
 	height: 30px;
@@ -86,6 +93,7 @@ div#left {
 	position: absolute;
 	top: 0;
 	z-index: 1;
+	direction: ltr;
 }
 
 div#logo {
@@ -120,6 +128,7 @@ aside.moduletable > h2.menu-name,
 aside > ul.nav.menu {
 	display: table;
 	margin: 0 auto 12px;
+	text-align: center;
 }
 
 aside > ul.nav.menu > li {
@@ -297,7 +306,7 @@ div#main {
 	width: 28%;
 	margin: 10px 10px;
 	padding: 10px;
-	min-height: 250px;
+	min-height: 270px;
 }
 
 .FoodCategoryOutItem .catItemImageBlock {

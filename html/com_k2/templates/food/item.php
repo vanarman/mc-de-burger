@@ -47,7 +47,7 @@ defined('_JEXEC') or die; ?>
 		<?php endif; ?>
 
 		<?php if(isset($this->item->extra_fields_search)) : ?>
-			<span class="price"> <? echo $this->item->extra_fields_search; ?> грн</span>
+			<span class="price"> <? echo $this->item->extra_fields_search; ?></span>
 		<?php endif; ?>
 	</div>
 </div>

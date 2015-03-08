@@ -20,6 +20,7 @@
          <positions>
                  <position>mainmenu</position>
                  <position>search</position>
+                 <position>langswitch</position>
                  <position>additionalmenu</position>
                  <position>breadcrumbs</position>
                  <position>bigcentralslider</position>
